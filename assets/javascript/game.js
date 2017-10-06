@@ -37,7 +37,7 @@
 			guessesLeft--;
 			addGuess();
 			if (guessesLeft === 0) {
-				alert("You Lose! Try again.");
+				alert("Disappointing. Prove me wrong.");
 				losses++;
 				resetGame();
 			}
@@ -45,8 +45,8 @@
 
 		//Incorporating HTML
 		var html =
-          "<p>wins: " + wins + "</p>" +
-          "<p>losses: " + losses + "</p>" +
+          "<p>Wins: " + wins + "</p>" +
+          "<p>Losses: " + losses + "</p>" +
           "<p>Guesses Left: " + guessesLeft + "</p>" +
           "<p>Your guesses so far: " + wrongGuesses + "</p>";
 
