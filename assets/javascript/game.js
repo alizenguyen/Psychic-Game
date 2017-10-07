@@ -7,6 +7,20 @@
 	var wrongGuesses = [];
 
 	document.onkeyup = function(event) {
+
+		// Sets the music
+	      var audioElement = document.createElement("audio");
+	      audioElement.setAttribute("src", "assets/mood.mp3");
+
+	      // Theme Button
+	      $(".setMood").on("click", function() {
+	        audioElement.play();
+	      });
+
+	      $(".killMood").on("click", function() {
+	        audioElement.pause();
+	      });
+
 		//determines which key was pressed.
 		var userGuess = event.key;
 		// randomly chooses a choice from the options array. This is the Computer's guess.
