@@ -51,7 +51,7 @@
 			guessesLeft--;
 			addGuess();
 			if (guessesLeft === 0) {
-				alert("Disappointing. Prove me wrong.");
+				alert("Disappointing. Try again and prove me wrong.");
 				losses++;
 				resetGame();
 			}
