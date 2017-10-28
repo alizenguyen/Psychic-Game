@@ -6,6 +6,8 @@
 	var guessesLeft = 10;
 	var wrongGuesses = [];
 
+	console.log(computerChoices);
+
 	// Sets the music
       var audioElement = document.createElement("audio");
       audioElement.setAttribute("src", "assets/mood.mp3");
@@ -21,6 +23,7 @@
 
 	document.onkeyup = function(event) {
 
+		console.log(event);
 		//determines which key was pressed.
 		var userGuess = event.key;
 		// randomly chooses a choice from the options array. This is the Computer's guess.
